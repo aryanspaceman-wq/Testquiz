@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Researcher dashboard | BEYOND THE BUZZ</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<main class="wrap">
+<h1 style="font-size:2.2rem">Researcher dashboard</h1>
+<section id="login" class="card"><h2>Sign in</h2>
+<p><label>Email<br><input id="em" type="email" autocomplete="username"></label></p>
+<p><label>Password<br><input id="pw" type="password" autocomplete="current-password"></label></p>
+<p class="err" id="lerr" role="alert"></p><button id="go" class="btn primary">Sign in</button></section>
+<section id="dash" hidden>
+<p class="note">These results show associations, not causes. They describe the people who answered and do not represent all teenagers in Qatar unless the sampling design supports that. Groups smaller than 5 are hidden.</p>
+<div class="filters"><select id="fa" aria-label="Age group"></select><select id="fr" aria-label="Area"></select><select id="fe" aria-label="Consumption status"></select>
+<button id="csv" class="btn ghost">Export CSV</button><button id="out" class="btn ghost">Sign out</button></div>
+<div id="out-charts"></div></section>
+</main>
+<script src="js/config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/dashboard.js"></script>
+</body></html>
